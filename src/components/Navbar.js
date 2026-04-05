@@ -12,6 +12,7 @@ import {
   AiOutlineHome,
   AiOutlineFundProjectionScreen,
   AiOutlineUser,
+  AiOutlineBook,
 } from "react-icons/ai";
 
 import { CgFileDocument } from "react-icons/cg";
@@ -72,6 +73,26 @@ function NavBar() {
             <Nav.Item>
               <Nav.Link
                 as={Link}
+                to="/experience"
+                onClick={() => updateExpanded(false)}
+              >
+                <AiOutlineUser style={{ marginBottom: "2px" }} /> Experience
+              </Nav.Link>
+            </Nav.Item>
+
+            <Nav.Item>
+              <Nav.Link
+                as={Link}
+                to="/research"
+                onClick={() => updateExpanded(false)}
+              >
+                <AiOutlineBook style={{ marginBottom: "2px" }} /> Research
+              </Nav.Link>
+            </Nav.Item>
+
+            <Nav.Item>
+              <Nav.Link
+                as={Link}
                 to="/project"
                 onClick={() => updateExpanded(false)}
               >
@@ -92,7 +113,7 @@ function NavBar() {
               </Nav.Link>
             </Nav.Item>
 
-            <Nav.Item>
+            {/* <Nav.Item>
               <Nav.Link
                 href="https://soumyajitblogs.vercel.app/"
                 target="_blank"
@@ -100,18 +121,18 @@ function NavBar() {
               >
                 <ImBlog style={{ marginBottom: "2px" }} /> Blogs
               </Nav.Link>
-            </Nav.Item>
+            </Nav.Item> */}
 
-            <Nav.Item className="fork-btn">
+            {/* <Nav.Item className="fork-btn">
               <Button
-                href="https://github.com/soumyajit4419/Portfolio"
+                href="https://github.com/wannasleepforlong/Portfolio"
                 target="_blank"
                 className="fork-btn-inner"
               >
                 <CgGitFork style={{ fontSize: "1.2em" }} />{" "}
                 <AiFillStar style={{ fontSize: "1.1em" }} />
               </Button>
-            </Nav.Item>
+            </Nav.Item> */}
           </Nav>
         </Navbar.Collapse>
       </Container>
