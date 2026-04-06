@@ -50,7 +50,7 @@ function Experience() {
             <ExperienceCard
               title="Machine Learning Intern"
               company="Zerzura Studios"
-              date="Aug 2024 – May 2025"
+              date="Aug 2024 – Sep 2024"
               location="Remote"
               description={[
                 "Developed features for an AI-based Digital Asset Management system with advanced capabilities for tagging, summarization and search.",

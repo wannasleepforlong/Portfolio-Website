@@ -17,6 +17,16 @@ function Research() {
         <Row style={{ justifyContent: "center", paddingBottom: "10px" }}>
           <Col md={5} className="project-card">
             <ResearchCard
+              title="Rolling Out Data Quality Overnight, without losing the plot: A Multi-Agent System for Speech Data Quality Management"
+              role="Second Author"
+              conference="Findings of ACL 2026"
+              description="SpeechQM-Agent is a natural language-driven multi-agent system that automates speech dataset quality verification, achieving 80-90% agreement with experts at <20% cost and time."
+              link="https://yet-to-be-published.com"
+            />
+          </Col>
+
+          <Col md={5} className="project-card">
+            <ResearchCard
               title="Post-ASR Correction in Hindi: Comparing Language Models and Large Language Models in Low-Resource Scenarios"
               role="Research Contributor"
               conference="EACL 2026"
@@ -24,6 +34,7 @@ function Research() {
               link="https://aclanthology.org/2026.eacl-short.45"
             />
           </Col>
+
         </Row>
       </Container>
     </Container>

@@ -34,21 +34,21 @@ function Projects() {
 
           <Col md={4} className="project-card">
             <ProjectCard
-              imgPath={bitsOfCode}
-              isBlog={false}
-              title="Semantic Knowledge Augmented RAG for Improved Question Answering"
-              description="A semantic knowledge-augmented RAG system with hybrid retrieval using vector search and BM25"
-              ghLink="https://github.com/wannasleepforlong/SemRAG"
-            />
-          </Col>
-
-          <Col md={4} className="project-card">
-            <ProjectCard
               imgPath={editor}
               isBlog={false}
               title="AarogyaAI: AI-Powered Telemedicine Platform"
               description="AI-powered telemedicine platform with symptom analysis, doctor matching, video consultations and automated medical notes"
               ghLink="https://github.com/wannasleepforlong/AarogyaAI"
+            />
+          </Col>
+
+          <Col md={4} className="project-card">
+            <ProjectCard
+              imgPath={bitsOfCode}
+              isBlog={false}
+              title="SemRAG for Improved Question Answering"
+              description="A semantic knowledge-augmented RAG system with hybrid retrieval using vector search and BM25"
+              ghLink="https://github.com/wannasleepforlong/SemRAG"
             />
           </Col>
 
