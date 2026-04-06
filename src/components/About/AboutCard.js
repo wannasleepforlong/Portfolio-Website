@@ -14,7 +14,7 @@ function AboutCard() {
             I’m currently working as a{" "}
             <span className="purple">AI/ML Engineer</span> at{" "}
             <span className="purple">NiyamR AI</span>.
-            <br />I hold an B.Tech. in{" "}
+            <br />I hold a B.Tech. in{" "}
             <span className="purple">Information Technology and Mathematical Innovation</span> from{" "}
             <span className="purple">Cluster Innovation Centre, University of Delhi</span>.
             <br />
