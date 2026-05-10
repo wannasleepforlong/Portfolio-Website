@@ -450,10 +450,16 @@ button:focus {
 /* Projects */
 /* --------- */
 .project-section {
+  z-index: 0 !important;
   position: relative !important;
   padding-top: 150px !important;
   padding-bottom: 30px !important;
   background-image: var(--section-background-color) !important;
+}
+
+.project-section > .container {
+  position: relative !important;
+  z-index: 1 !important;
 }
 
 .project-card {
@@ -513,6 +519,11 @@ button:focus {
   padding: 20px !important;
   opacity: 0.8 !important;
   border-radius: 10px !important;
+}
+
+.project-card-image {
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
 }
 
 .blog-img {
