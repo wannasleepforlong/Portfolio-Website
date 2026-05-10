@@ -20,7 +20,7 @@ function Footer() {
             <li className="social-icons">
               <a
                 href="https://github.com/wannasleepforlong"
-                style={{ color: "white" }}
+                style={{ color: "#fef7ef" }}
                 target="_blank"
                 rel="noopener noreferrer"
               >
@@ -30,7 +30,7 @@ function Footer() {
             <li className="social-icons">
               <a
                 href="https://twitter.com/wannasleepforlong"
-                style={{ color: "white" }}
+                style={{ color: "#fef7ef" }}
                 target="_blank"
                 rel="noopener noreferrer"
               >
@@ -40,7 +40,7 @@ function Footer() {
             <li className="social-icons">
               <a
                 href="https://www.linkedin.com/in/wannasleepforlong/"
-                style={{ color: "white" }}
+                style={{ color: "#fef7ef" }}
                 target="_blank"
                 rel="noopener noreferrer"
               >

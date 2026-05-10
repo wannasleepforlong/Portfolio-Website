@@ -7,15 +7,15 @@ function ExperienceCard(props) {
       <Card.Body>
         <div style={{ display: "flex", justifyContent: "space-between", alignItems: "flex-start", flexWrap: "wrap" }}>
           <div>
-            <Card.Title style={{ fontWeight: "bold", fontSize: "1.5rem", color: "#c770f0" }}>{props.company}</Card.Title>
-            <Card.Subtitle style={{ paddingBottom: "10px", color: "white" }}>{props.title} | {props.location}</Card.Subtitle>
+            <Card.Title style={{ fontWeight: "bold", fontSize: "1.5rem", color: "var(--accent-strong)" }}>{props.company}</Card.Title>
+            <Card.Subtitle style={{ paddingBottom: "10px", color: "var(--muted-text)" }}>{props.title} | {props.location}</Card.Subtitle>
           </div>
-          <div style={{ color: "white", textAlign: "right" }}>
+          <div style={{ color: "var(--muted-text)", textAlign: "right" }}>
             <span>{props.date}</span>
           </div>
         </div>
         
-        <Card.Text style={{ textAlign: "justify", marginTop: "15px", color: "white" }}>
+        <Card.Text style={{ textAlign: "justify", marginTop: "15px", color: "var(--text-color)" }}>
           <ul>
             {props.description.map((point, index) => (
               <li key={index} style={{ marginBottom: "10px" }}>{point}</li>

@@ -13,11 +13,11 @@ import {
 } from "react-icons/ai";
 import { FaLinkedinIn } from "react-icons/fa";
 
-function Home() {
+function Home({ theme }) {
   return (
     <section>
       <Container fluid className="home-section" id="home">
-        <Particle />
+        <Particle theme={theme} />
         <Container className="home-content">
           <Row>
             <Col md={7} className="home-header">

@@ -8,15 +8,15 @@ import chatify from "../../Assets/Projects/semantic.webp";
 import bitsOfCode from "../../Assets/Projects/blog.png";
 import wapp from "../../Assets/Projects/Whatsapp agent.webp";
 
-function Projects() {
+function Projects({ theme }) {
   return (
     <Container fluid className="project-section">
-      <Particle />
+      <Particle theme={theme} />
       <Container>
         <h1 className="project-heading">
           My Recent <strong className="purple">Works </strong>
         </h1>
-        <p style={{ color: "white", position: "relative", zIndex: "1" }}>
+        <p style={{ color: "var(--muted-text)", position: "relative", zIndex: "1" }}>
           Below are a few projects I've worked on recently.
           <br />
           All of my projects can be found{" "}

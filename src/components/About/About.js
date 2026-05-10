@@ -7,11 +7,11 @@ import Aboutcard from "./AboutCard";
 import laptopImg from "../../Assets/about.png";
 import Toolstack from "./Toolstack";
 
-function About() {
+function About({ theme }) {
   return (
     <>
       {" "}
-      <Particle />
+      <Particle theme={theme} />
       <Container fluid className="about-section">
         <Container>
           <Row style={{ justifyContent: "center", padding: "10px" }}>

@@ -1,12 +1,20 @@
 import React from "react";
 import Particles from "react-tsparticles";
 
-function Particle() {
+function Particle({ theme = "warm" }) {
+  const particleColors =
+    theme === "night"
+      ? ["#c770f0", "#8a49a8", "#ffffff"]
+      : ["#0e8072", "#c56a3d", "#17313a"];
+
   return (
     <Particles
       id="tsparticles"
       params={{
         particles: {
+          color: {
+            value: particleColors,
+          },
           number: {
             value: 160,
             density: {
@@ -23,9 +31,10 @@ function Particle() {
             speed: 0.05,
           },
           size: {
-            value: 1,
+            value: 1.2,
           },
           opacity: {
+            value: theme === "night" ? 0.25 : 0.35,
             anim: {
               enable: true,
               speed: 1,

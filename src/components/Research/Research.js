@@ -3,15 +3,15 @@ import { Container, Row, Col } from "react-bootstrap";
 import ResearchCard from "./ResearchCard";
 import Particle from "../Particle";
 
-function Research() {
+function Research({ theme }) {
   return (
     <Container fluid className="project-section">
-      <Particle />
+      <Particle theme={theme} />
       <Container>
         <h1 className="project-heading">
           My <strong className="purple">Research Work </strong>
         </h1>
-        <p style={{ color: "white" }}>
+        <p style={{ color: "var(--muted-text)" }}>
           Here are a few of my publications and research papers.
         </p>
         <Row style={{ justifyContent: "center", paddingBottom: "10px" }}>

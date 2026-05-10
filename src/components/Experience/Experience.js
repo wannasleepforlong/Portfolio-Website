@@ -3,15 +3,15 @@ import { Container, Row, Col } from "react-bootstrap";
 import ExperienceCard from "./ExperienceCard";
 import Particle from "../Particle";
 
-function Experience() {
+function Experience({ theme }) {
   return (
     <Container fluid className="project-section">
-      <Particle />
+      <Particle theme={theme} />
       <Container>
         <h1 className="project-heading">
           My <strong className="purple">Experience </strong>
         </h1>
-        <p style={{ color: "white" }}>
+        <p style={{ color: "var(--muted-text)" }}>
           Here are my professional experiences.
         </p>
         <Row style={{ justifyContent: "center", paddingBottom: "10px" }}>
