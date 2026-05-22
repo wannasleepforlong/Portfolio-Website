@@ -9,12 +9,12 @@ function AboutCard() {
         <blockquote className="blockquote mb-0">
           <p style={{ textAlign: "justify" }}>
             Hi everyone! I’m <span className="purple">Abhinav Painuli</span>{" "}
-            from <span className="purple">Delhi, India</span>.
+            from <span className="purple">Uttarakhand, India</span>.
             <br />
             I’m currently working as a{" "}
             <span className="purple">AI/ML Engineer</span> at{" "}
             <span className="purple">NiyamR AI</span>.
-            <br />I am pursuing a B.Tech. in{" "}
+            <br />I have completed my B.Tech. in{" "}
             <span className="purple">Information Technology and Mathematical Innovation</span> from{" "}
             <span className="purple">Cluster Innovation Centre, University of Delhi</span>.
             <br />
