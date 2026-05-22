@@ -21,7 +21,7 @@ function Research({ theme }) {
               role="Second Author"
               conference="Findings of ACL 2026"
               description="SpeechQM-Agent is a natural language-driven multi-agent system that automates speech dataset quality verification, achieving 80-90% agreement with experts at <20% cost and time."
-              link="https://yet-to-be-published.com"
+              link="https://openreview.net/forum?id=VtlXkkEDnE#discussion"
             />
           </Col>
 
