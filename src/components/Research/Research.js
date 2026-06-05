@@ -12,7 +12,7 @@ function Research({ theme }) {
           My <strong className="purple">Research Work </strong>
         </h1>
         <p style={{ color: "var(--muted-text)" }}>
-          Here are a few of my publications and research papers.
+          Here are my publications and research papers.
         </p>
         <Row style={{ justifyContent: "center", paddingBottom: "10px" }}>
           <Col md={5} className="project-card">
