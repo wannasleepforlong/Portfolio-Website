@@ -27,6 +27,16 @@ function Research({ theme }) {
 
           <Col md={5} className="project-card">
             <ResearchCard
+              title="VāṇīSetu: A Human-AI Collaborative Framework for Scalable Conversational Speech Corpus Creation in Low-Resource Settings"
+              role="Co-author"
+              conference="Interspeech 2026"
+              description="VāṇīSetu is a scalabale human–AI framework that enabled the creation of a 100-hour agricultural speech corpus while reducing annotation effort by 61%."
+              link="https://openreview.net/forum?id=JLOx2Zejgp#discussion"
+            />
+          </Col>
+
+          <Col md={5} className="project-card">
+            <ResearchCard
               title="Post-ASR Correction in Hindi: Comparing Language Models and Large Language Models in Low-Resource Scenarios"
               role="Research Contributor"
               conference="EACL 2026"
