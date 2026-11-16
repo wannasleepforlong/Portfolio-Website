@@ -1,48 +1,67 @@
 import React from "react";
-import Card from "react-bootstrap/Card";
-import Button from "react-bootstrap/Button";
-import { CgWebsite } from "react-icons/cg";
-import { BsGithub } from "react-icons/bs";
+import { BsGithub, BsArrowUpRight } from "react-icons/bs";
 
-function ProjectCards(props) {
+function Links({ ghLink, demoLink, demoLabel }) {
   return (
-    <Card className="project-card-view">
-      <Card.Img
-        variant="top"
-        src={props.imgPath}
-        alt={props.title}
-        loading="lazy"
-        decoding="async"
-        sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
-        className="project-card-image"
-      />
-      <Card.Body>
-        <Card.Title>{props.title}</Card.Title>
-        <Card.Text style={{ textAlign: "justify" }}>
-          {props.description}
-        </Card.Text>
-        <Button variant="primary" href={props.ghLink} target="_blank">
-          <BsGithub /> &nbsp;
-          {props.isBlog ? "Blog" : "GitHub"}
-        </Button>
-        {"\n"}
-        {"\n"}
-
-        {/* If the component contains Demo link and if it's not a Blog then, it will render the below component  */}
-
-        {!props.isBlog && props.demoLink && (
-          <Button
-            variant="primary"
-            href={props.demoLink}
-            target="_blank"
-            style={{ marginLeft: "10px" }}
-          >
-            <CgWebsite /> &nbsp;
-            {"Demo"}
-          </Button>
-        )}
-      </Card.Body>
-    </Card>
+    <div className="pc-links">
+      <a className="pc-btn pc-btn-ghost" href={ghLink} target="_blank" rel="noreferrer">
+        <BsGithub /> Code
+      </a>
+      {demoLink && (
+        <a className="pc-btn pc-btn-solid" href={demoLink} target="_blank" rel="noreferrer">
+          {demoLabel || "Live demo"} <BsArrowUpRight />
+        </a>
+      )}
+    </div>
   );
 }
-export default ProjectCards;
+
+function TechChips({ tech }) {
+  return (
+    <ul className="pc-chips">
+      {tech.map((t) => (
+        <li key={t}>{t}</li>
+      ))}
+    </ul>
+  );
+}
+
+export function FlagshipCard({ project, index }) {
+  return (
+    <article className="pc-flagship">
+      <div className="pc-flagship-main">
+        <div className="pc-flagship-top">
+          <span className="pc-index">{String(index + 1).padStart(2, "0")}</span>
+          <span className="pc-category">{project.category}</span>
+          {project.badge && <span className="pc-badge">{project.badge}</span>}
+        </div>
+        <h3 className="pc-flagship-title">{project.title}</h3>
+        <p className="pc-tagline">{project.tagline}</p>
+        <p className="pc-desc">{project.description}</p>
+        <TechChips tech={project.tech} />
+        <Links {...project} />
+      </div>
+      <dl className="pc-metrics">
+        {project.metrics.map((m) => (
+          <div className="pc-metric" key={m.label}>
+            <dt>{m.value}</dt>
+            <dd>{m.label}</dd>
+          </div>
+        ))}
+      </dl>
+    </article>
+  );
+}
+
+export function CatalogueCard({ project }) {
+  return (
+    <article className="pc-card">
+      <span className="pc-category">{project.category}</span>
+      <h4 className="pc-card-title">{project.title}</h4>
+      {project.highlight && <p className="pc-highlight">{project.highlight}</p>}
+      <p className="pc-desc pc-card-desc">{project.description}</p>
+      <TechChips tech={project.tech} />
+      <Links {...project} />
+    </article>
+  );
+}
